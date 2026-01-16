@@ -1,8 +1,8 @@
 class Godaddy < Formula
   desc "GoDaddy DNS CLI tool"
   homepage "https://github.com/howells/godaddy-cli"
-  url "https://github.com/howells/godaddy-cli/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "ab9f74549c83cb077fe3dff9aca12450580b6c202a5f6d837c3295eaa543c7a9"
+  url "https://github.com/howells/godaddy-cli/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "2ef8790a38ddfa5e80aff693e1c1717e00fba0121d32d659544fdb634d438c91"
   license "MIT"
 
   def install
