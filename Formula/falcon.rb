@@ -1,8 +1,8 @@
 class Falcon < Formula
   desc "fal.ai image generation CLI with interactive studio mode"
   homepage "https://github.com/howells/falcon"
-  url "https://github.com/howells/falcon/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "10e21b7615b29b6e5c68eb4bfdbde00e0c467a9226232b0654c447dc0d598b57"
+  url "https://github.com/howells/falcon/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "d227f9606712e11aadfb56317d181f9a99d1c2cc5da8804fa7fe8ad63664d1ad"
   license "MIT"
 
   depends_on "oven-sh/bun/bun"
