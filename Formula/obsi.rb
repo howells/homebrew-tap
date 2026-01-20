@@ -1,8 +1,8 @@
 class Obsi < Formula
   desc "Interactive Obsidian vault CLI with TUI and Claude Code integration"
   homepage "https://github.com/howells/obsi"
-  url "https://github.com/howells/obsi/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "dd495fcfffb12fc89bcaa7cc15dc0e01eb9d90ee39a0199a5c3a0ed94b770e4f"
+  url "https://github.com/howells/obsi/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "38e460cc60673cc23b3fddffb6f280a1cb812269fca67cab4f24166ee697a352"
   license "MIT"
 
   depends_on "oven-sh/bun/bun"
