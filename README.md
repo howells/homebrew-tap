@@ -1,6 +1,6 @@
 # Homebrew Tap
 
-Custom Homebrew formulas.
+Custom Homebrew formulas + casks.
 
 ## Installation
 
@@ -8,7 +8,19 @@ Custom Homebrew formulas.
 brew tap howells/tap
 ```
 
-## Formulas
+## Casks (macOS apps)
+
+### monogrove
+
+Dependency health for monorepos — desktop app.
+
+```bash
+brew install --cask howells/tap/monogrove
+```
+
+Auto-updates via the in-app Sparkle banner.
+
+## Formulas (CLI tools)
 
 ### godaddy
 
