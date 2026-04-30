@@ -1,6 +1,6 @@
 cask "monogrove" do
-  version "0.1.0"
-  sha256 "f560ed998bba85acc6bd6cd232d427e14d9adcdefe8315e176499ae35c8ba84d"
+  version "0.1.1"
+  sha256 "d80002d23d79fb9ba4ccb5ace1e76bed9f01bb643032b84e9b0f22105dec34ad"
 
   url "https://github.com/howells/monogrove-releases/releases/download/v#{version}/Monogrove-#{version}.dmg"
   name "Monogrove"
@@ -21,6 +21,17 @@ cask "monogrove" do
   auto_updates true
 
   app "Monogrove.app"
+
+  # Expose the standalone CLI/TUI binary on PATH. The Wails binary at
+  # Contents/MacOS is the GUI entry — it can't be safely run from a terminal.
+  # The release build script (script/build-release.sh) builds a separate
+  # `monogrove` binary from cmd/monogrove and drops it into the bundle's
+  # Contents/Resources/. Symlinking from there means
+  # `brew install --cask monogrove` installs both surfaces in one step:
+  #
+  #   /Applications/Monogrove.app           — the GUI
+  #   /opt/homebrew/bin/monogrove (symlink) — the CLI/TUI
+  binary "#{appdir}/Monogrove.app/Contents/Resources/monogrove"
 
   # `brew uninstall --zap monogrove` removes these too. We explicitly list
   # the legacy `grove` cache locations as well — early adopters who tried
