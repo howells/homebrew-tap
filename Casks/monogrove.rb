@@ -1,8 +1,9 @@
 cask "monogrove" do
-  version "0.1.1"
-  sha256 "d80002d23d79fb9ba4ccb5ace1e76bed9f01bb643032b84e9b0f22105dec34ad"
+  version "0.1.2"
+  sha256 "a96b0475efb8e6a81ee1eeac6135d7d4105387b343c7edcdbf11b7548f4317b0"
 
-  url "https://github.com/howells/monogrove-releases/releases/download/v#{version}/Monogrove-#{version}.dmg"
+  url "https://github.com/howells/monogrove-releases/releases/download/v#{version}/Monogrove-#{version}.dmg",
+      verified: "github.com/howells/monogrove-releases/"
   name "Monogrove"
   desc "Dependency health for monorepos"
   homepage "https://monogrove.com/"
