@@ -1,6 +1,6 @@
 cask "monogrove" do
-  version "0.1.10"
-  sha256 "a56a915613a9541353696d129178591d31948b78e58aee002a512aaf17573c7e"
+  version "0.1.11"
+  sha256 "121d1e05274c2280b9c3ef79d19815cd466e8c1153306a5eaa4c6358f5102453"
 
   url "https://github.com/howells/monogrove-releases/releases/download/v#{version}/Monogrove-#{version}.dmg",
       verified: "github.com/howells/monogrove-releases/"
